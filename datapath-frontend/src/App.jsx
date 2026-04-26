@@ -4,6 +4,7 @@ import Roadmap from "./pages/Roadmap.jsx";
 import Lesson from "./pages/Lesson.jsx";
 import Login from "./pages/Login.jsx";
 import Signup from "./pages/Signup.jsx";
+import ForgotPassword from "./pages/ForgotPassword";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="/lesson" element={<Lesson />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/forgotpassword" element={<ForgotPassword />} />
       </Routes>
     </div>
   );
