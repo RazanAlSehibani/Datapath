@@ -4,17 +4,26 @@ import Roadmap from "./pages/Roadmap.jsx";
 import Lesson from "./pages/Lesson.jsx";
 import Login from "./pages/Login.jsx";
 import Signup from "./pages/Signup.jsx";
-import ForgotPassword from "./pages/ForgotPassword";
+import ForgotPassword from "./pages/ForgotPassword.jsx";
+import logo from "./assets/logo.png";
+import "./App.css";
 
 export default function App() {
   return (
-    <div style={{ padding: 16 }}>
-      <nav style={{ display: "flex", gap: 12, marginBottom: 16 }}>
-        <Link to="/">Home</Link>
-        <Link to="/roadmap">Roadmap</Link>
-        <Link to="/lesson">Lesson</Link>
-        <Link to="/login">Login</Link>
-        <Link to="/signup">Sign up</Link>
+    <div className="app">
+      <nav className="navbar">
+        <div className="logo-container">
+          <img src={logo} alt="DataPath logo" />
+          <span>DataPath</span>
+        </div>
+
+        <div className="nav-links">
+          <Link to="/">Home</Link>
+          <Link to="/roadmap">Roadmap</Link>
+          <Link to="/lesson">Lesson</Link>
+          <Link to="/login">Login</Link>
+          <Link to="/signup">Sign up</Link>
+        </div>
       </nav>
 
       <Routes>

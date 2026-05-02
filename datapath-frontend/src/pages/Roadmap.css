@@ -1,0 +1,284 @@
+.roadmap-page {
+  background: #fafafa;
+  font-family: Arial, sans-serif;
+  color: #111827;
+  min-height: 100vh;
+  padding-bottom: 0;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  background: white;
+  padding: 60px 90px;
+  border-bottom: 1px solid #eee;
+}
+
+.hero-text h1 {
+  font-size: 38px;
+  line-height: 1.15;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.hero-text button {
+  background: #5b5cf0;
+  color: white;
+  border: 0;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hero-box {
+  height: 250px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #70e1f5, #b39ddb, #fff1a8, #f5a3d7);
+}
+
+.roadmap-title {
+  text-align: center;
+  margin: 55px 0 35px;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.timeline {
+  position: relative;
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 10px 0 50px;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background: #dedede;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 18px 28px;
+  box-sizing: border-box;
+}
+
+.timeline-item.left {
+  left: 0;
+}
+
+.timeline-item.right {
+  left: 50%;
+}
+
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background: #5b5cf0;
+  border-radius: 50%;
+  top: 45px;
+  right: -6.5px;
+  z-index: 2;
+}
+
+.timeline-item.right::after {
+  left: -6.5px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+}
+
+.level {
+  color: #5b5cf0;
+  font-size: 13px;
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin: 0 0 15px;
+}
+
+.lesson-list {
+  margin: 12px 0 18px;
+}
+
+.lesson-item {
+  border-top: 1px solid #eeeeee;
+  padding: 10px 0;
+}
+
+.lesson-item h4 {
+  margin: 0 0 4px;
+  font-size: 14px;
+}
+
+.lesson-item p {
+  margin: 0;
+  font-size: 12px;
+  color: #6b7280;
+  line-height: 1.4;
+}
+
+.card button {
+  width: 100%;
+  padding: 9px;
+  margin-top: 9px;
+  border-radius: 6px;
+  border: none;
+  background: #5b5cf0;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.card .secondary {
+  background: white;
+  color: #5b5cf0;
+  border: 1px solid #5b5cf0;
+}
+
+/* Footer */
+.roadmap-footer {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-top: 70px;
+  background: linear-gradient(90deg, #c5b6ff, #a18dff);
+  color: white;
+}
+
+.roadmap-footer-content {
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.roadmap-footer h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.roadmap-footer p {
+  margin: 6px 0 0;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.roadmap-footer-links {
+  display: flex;
+  gap: 22px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.roadmap-footer-links span {
+  cursor: pointer;
+}
+
+.roadmap-footer-links span:hover {
+  opacity: 0.8;
+}
+
+.roadmap-footer-social {
+  display: flex;
+  gap: 12px;
+  font-size: 18px;
+}
+
+.roadmap-footer-bottom {
+  text-align: center;
+  padding: 15px;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 35px 25px;
+  }
+
+  .timeline {
+    max-width: 92%;
+  }
+
+  .timeline::after {
+    left: 15px;
+  }
+
+  .timeline-item,
+  .timeline-item.right {
+    width: 100%;
+    left: 0;
+    padding-left: 45px;
+    padding-right: 0;
+  }
+
+  .timeline-item::after,
+  .timeline-item.right::after {
+    left: 8px;
+  }
+
+  .roadmap-footer-content {
+    padding: 35px 25px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .roadmap-footer-links {
+    flex-wrap: wrap;
+  }
+}
+/* ===== CTA قبل الفوتر ===== */
+.roadmap-end {
+  text-align: center;
+  padding: 70px 20px 50px;
+}
+
+.roadmap-end h2 {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+.roadmap-end p {
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.roadmap-end button {
+  background: #5b5cf0;
+  color: white;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ===== تعديل الفوتر ===== */
+.roadmap-footer-social span {
+  font-size: 14px;
+  opacity: 0.9;
+}
