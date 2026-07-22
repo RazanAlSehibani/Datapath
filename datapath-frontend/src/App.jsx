@@ -13,9 +13,16 @@ export default function App() {
     <div className="app">
       <nav className="navbar">
         <div className="logo-container">
-          <img src={logo} alt="DataPath logo" />
-          <span>DataPath</span>
-        </div>
+  <div className="nav-logo-box">
+    <img
+      src={logo}
+      alt="DataPath logo"
+      className="nav-logo-image"
+    />
+  </div>
+
+  <span>DataPath</span>
+</div>
 
         <div className="nav-links">
           <Link to="/">Home</Link>
